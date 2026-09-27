@@ -1,0 +1,2296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VITA Concept | WebStudio</title>
+
+  <meta
+    name="description"
+    content="VITA Health & Wellness eCommerce Concept desarrollado por WebStudio."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================
+       CONCEPT BAR
+  ========================================================== -->
+
+  <div class="concept-bar">
+    <div class="container concept-bar-inner">
+
+      <span>WEBSTUDIO</span>
+
+      <p>
+        HEALTH & WELLNESS ECOMMERCE
+        <span class="concept-separator">·</span>
+        CONCEPT PROJECT
+      </p>
+
+      <span class="concept-year">2026</span>
+
+    </div>
+  </div>
+
+
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
+
+  <header class="site-header" id="siteHeader">
+
+    <div class="container header-main">
+
+      <a
+        href="#inicio"
+        class="brand"
+        aria-label="VITA Concept"
+      >
+
+        <span class="brand-symbol">
+          <span></span>
+          <span></span>
+        </span>
+
+        <span class="brand-name">VITA</span>
+
+      </a>
+
+
+      <div class="search-wrapper">
+
+        <form
+          class="search-box"
+          id="searchForm"
+        >
+
+          <span class="search-icon">⌕</span>
+
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="¿Qué estás buscando?"
+            autocomplete="off"
+          >
+
+          <button type="submit">
+            Buscar
+          </button>
+
+        </form>
+
+        <div
+          class="search-results"
+          id="searchResults"
+        ></div>
+
+      </div>
+
+
+      <div class="header-actions">
+
+        <button
+          class="header-action location-action"
+          id="locationButton"
+          type="button"
+        >
+
+          <span class="action-icon">⌖</span>
+
+          <span class="action-copy">
+
+            <small>Entrega en</small>
+
+            <strong>
+              Seleccionar ubicación
+            </strong>
+
+          </span>
+
+        </button>
+
+
+        <button
+          class="header-icon-button"
+          id="accountButton"
+          type="button"
+          aria-label="Mi cuenta"
+        >
+          <span>◯</span>
+        </button>
+
+
+        <button
+          class="header-icon-button"
+          id="favoritesButton"
+          type="button"
+          aria-label="Favoritos"
+        >
+
+          <span>♡</span>
+
+          <b id="favoritesCount">
+            0
+          </b>
+
+        </button>
+
+
+        <button
+          class="cart-button"
+          id="cartButton"
+          type="button"
+          aria-label="Abrir carrito"
+        >
+
+          <span class="cart-icon">
+            🛒
+          </span>
+
+          <span class="cart-copy">
+
+            <small>
+              Carrito
+            </small>
+
+            <strong id="cartHeaderTotal">
+              $0
+            </strong>
+
+          </span>
+
+          <b id="cartCount">
+            0
+          </b>
+
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- =======================================================
+         NAVIGATION
+    ======================================================== -->
+
+    <div class="navigation-row">
+
+      <div class="container navigation-inner">
+
+        <button
+          class="categories-button"
+          id="categoryButton"
+          type="button"
+        >
+
+          <span class="menu-lines">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
+
+          Categorías
+
+          <span class="chevron">
+            ⌄
+          </span>
+
+        </button>
+
+
+        <nav
+          class="main-nav"
+          id="mainNav"
+        >
+
+          <a href="#ofertas">
+            Ofertas
+          </a>
+
+          <a href="#categorias">
+            Salud
+          </a>
+
+          <a href="#categorias">
+            Belleza
+          </a>
+
+          <a href="#categorias">
+            Bebés
+          </a>
+
+          <a href="#categorias">
+            Cuidado personal
+          </a>
+
+          <a href="#productos">
+            Más vendidos
+          </a>
+
+          <a href="#servicios">
+            Servicios
+          </a>
+
+        </nav>
+
+
+        <div class="nav-highlight">
+
+          <span></span>
+
+          Compra online · recibe donde estés
+
+        </div>
+
+
+        <button
+          class="mobile-menu-button"
+          id="mobileMenuButton"
+          type="button"
+          aria-label="Abrir menú"
+        >
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- =======================================================
+         CATEGORY MENU
+    ======================================================== -->
+
+    <div
+      class="category-menu"
+      id="categoryMenu"
+    >
+
+      <div class="container category-menu-inner">
+
+        <div class="category-menu-heading">
+
+          <span class="eyebrow">
+            EXPLORA
+          </span>
+
+          <h2>
+            Encuentra lo que
+            necesitas.
+          </h2>
+
+          <p>
+            Categorías pensadas para hacer
+            tu compra más simple.
+          </p>
+
+        </div>
+
+
+        <div class="category-menu-grid">
+
+          <a href="#productos" class="category-menu-card">
+            <span>01</span>
+            <strong>Salud</strong>
+            <small>Bienestar y cuidado diario</small>
+            <b>↗</b>
+          </a>
+
+          <a href="#productos" class="category-menu-card">
+            <span>02</span>
+            <strong>Belleza</strong>
+            <small>Cuidado de la piel y cabello</small>
+            <b>↗</b>
+          </a>
+
+          <a href="#productos" class="category-menu-card">
+            <span>03</span>
+            <strong>Bebés</strong>
+            <small>Todo para los más pequeños</small>
+            <b>↗</b>
+          </a>
+
+          <a href="#productos" class="category-menu-card">
+            <span>04</span>
+            <strong>Cuidado personal</strong>
+            <small>Tu rutina diaria</small>
+            <b>↗</b>
+          </a>
+
+          <a href="#productos" class="category-menu-card">
+            <span>05</span>
+            <strong>Alimentos</strong>
+            <small>Opciones para todos los días</small>
+            <b>↗</b>
+          </a>
+
+          <a href="#productos" class="category-menu-card">
+            <span>06</span>
+            <strong>Hogar</strong>
+            <small>Soluciones para tu casa</small>
+            <b>↗</b>
+          </a>
+
+        </div>
+
+
+        <button
+          class="category-close"
+          id="closeCategory"
+          type="button"
+        >
+          ×
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================================================
+       MOBILE MENU
+  ========================================================== -->
+
+  <div
+    class="mobile-menu"
+    id="mobileMenu"
+  >
+
+    <div class="mobile-menu-header">
+
+      <span>
+        Menú
+      </span>
+
+      <button
+        id="closeMobileMenu"
+        type="button"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <nav>
+
+      <a href="#ofertas">Ofertas</a>
+      <a href="#categorias">Salud</a>
+      <a href="#categorias">Belleza</a>
+      <a href="#categorias">Bebés</a>
+      <a href="#categorias">Cuidado personal</a>
+      <a href="#productos">Más vendidos</a>
+      <a href="#servicios">Servicios</a>
+
+    </nav>
+
+  </div>
+
+
+  <!-- =========================================================
+       MAIN
+  ========================================================== -->
+
+  <main id="inicio">
+
+
+    <!-- =======================================================
+         HERO
+    ======================================================== -->
+
+    <section class="hero">
+
+      <div class="container hero-grid">
+
+
+        <div class="hero-copy">
+
+          <div class="hero-kicker">
+
+            <span></span>
+
+            TU BIENESTAR, MÁS CERCA
+
+          </div>
+
+
+          <h1>
+
+            Todo lo que
+            necesitas.
+
+            <em>
+              En un solo lugar.
+            </em>
+
+          </h1>
+
+
+          <p class="hero-description">
+
+            Una nueva experiencia para descubrir,
+            comparar y comprar productos de salud,
+            belleza y bienestar.
+
+          </p>
+
+
+          <div class="hero-actions">
+
+            <a
+              href="#productos"
+              class="button button-primary"
+            >
+              Comprar ahora
+              <span>↗</span>
+            </a>
+
+            <a
+              href="#servicios"
+              class="button button-secondary"
+            >
+              Ver servicios
+            </a>
+
+          </div>
+
+
+          <div class="hero-trust">
+
+            <div>
+              <strong>24/7</strong>
+              <span>Compra online</span>
+            </div>
+
+            <div>
+              <strong>7 días</strong>
+              <span>Entrega disponible</span>
+            </div>
+
+            <div>
+              <strong>100%</strong>
+              <span>Experiencia digital</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ===================================================
+             HERO IMAGE
+        ==================================================== -->
+
+        <div class="hero-visual">
+
+          <div class="hero-glow"></div>
+
+
+          <div class="hero-card hero-card-main">
+
+            <div class="hero-product-label">
+              CUIDADO DIARIO
+            </div>
+
+
+            <div class="hero-real-image">
+
+              <img
+                src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=1000&q=85"
+                alt="Producto de skincare"
+                loading="eager"
+              >
+
+            </div>
+
+
+            <div class="hero-product-bottom">
+
+              <div>
+
+                <small>
+                  PRECIO CONCEPTO
+                </small>
+
+                <strong>
+                  $12.990
+                </strong>
+
+              </div>
+
+
+              <button
+                class="quick-add"
+                data-product="Daily Care"
+                type="button"
+              >
+                +
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <div class="floating-card floating-offer">
+
+            <span class="floating-icon">
+              %
+            </span>
+
+            <div>
+
+              <small>
+                OFERTA
+              </small>
+
+              <strong>
+                Hasta -30%
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="floating-card floating-delivery">
+
+            <span class="floating-icon">
+              ↗
+            </span>
+
+            <div>
+
+              <small>
+                DELIVERY
+              </small>
+
+              <strong>
+                Recibe donde estés
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-bottom-line">
+
+        <div class="container">
+
+          <span>BIENESTAR</span>
+          <span>•</span>
+          <span>BELLEZA</span>
+          <span>•</span>
+          <span>SALUD</span>
+          <span>•</span>
+          <span>CUIDADO PERSONAL</span>
+          <span>•</span>
+          <span>DELIVERY</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         BENEFITS
+    ======================================================== -->
+
+    <section class="benefits">
+
+      <div class="container benefits-grid">
+
+        <div class="benefit-item">
+
+          <span class="benefit-icon">
+            ↗
+          </span>
+
+          <div>
+            <strong>Delivery</strong>
+            <p>Recibe donde estés</p>
+          </div>
+
+        </div>
+
+
+        <div class="benefit-item">
+
+          <span class="benefit-icon">
+            ✓
+          </span>
+
+          <div>
+            <strong>Compra simple</strong>
+            <p>Una experiencia sin fricción</p>
+          </div>
+
+        </div>
+
+
+        <div class="benefit-item">
+
+          <span class="benefit-icon">
+            %
+          </span>
+
+          <div>
+            <strong>Ofertas</strong>
+            <p>Encuentra oportunidades</p>
+          </div>
+
+        </div>
+
+
+        <div class="benefit-item">
+
+          <span class="benefit-icon">
+            +
+          </span>
+
+          <div>
+            <strong>Asesoría</strong>
+            <p>Soluciones para tu bienestar</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CATEGORIES
+    ======================================================== -->
+
+    <section
+      class="categories section"
+      id="categorias"
+    >
+
+      <div class="container">
+
+        <div class="section-heading-row">
+
+          <div>
+
+            <span class="eyebrow">
+              CATEGORÍAS
+            </span>
+
+            <h2>
+              Todo empieza
+              <span>por aquí.</span>
+            </h2>
+
+          </div>
+
+
+          <a
+            href="#productos"
+            class="text-link"
+          >
+            Ver todas
+            <span>↗</span>
+          </a>
+
+        </div>
+
+
+        <div class="category-grid">
+
+
+          <!-- =================================================
+               SALUD
+          ================================================== -->
+
+          <a
+            href="#productos"
+            class="category-card category-health"
+          >
+
+            <div class="category-card-top">
+
+              <span>01</span>
+
+              <span class="category-card-arrow">
+                ↗
+              </span>
+
+            </div>
+
+
+            <div class="category-photo">
+
+              <img
+                src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=900&q=85"
+                alt="Productos de salud"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="category-card-content">
+
+              <h3>
+                Salud
+              </h3>
+
+              <p>
+                Vitaminas y productos
+                para tu bienestar.
+              </p>
+
+            </div>
+
+          </a>
+
+
+          <!-- =================================================
+               BELLEZA
+          ================================================== -->
+
+          <a
+            href="#productos"
+            class="category-card category-beauty"
+          >
+
+            <div class="category-card-top">
+
+              <span>02</span>
+
+              <span class="category-card-arrow">
+                ↗
+              </span>
+
+            </div>
+
+
+            <div class="category-photo">
+
+              <img
+                src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&q=85"
+                alt="Productos de belleza y skincare"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="category-card-content">
+
+              <h3>
+                Belleza
+              </h3>
+
+              <p>
+                Cuida tu piel,
+                cabello y cuerpo.
+              </p>
+
+            </div>
+
+          </a>
+
+
+          <!-- =================================================
+               BEBÉS
+          ================================================== -->
+
+          <a
+            href="#productos"
+            class="category-card category-baby"
+          >
+
+            <div class="category-card-top">
+
+              <span>03</span>
+
+              <span class="category-card-arrow">
+                ↗
+              </span>
+
+            </div>
+
+
+            <div class="category-photo">
+
+              <img
+                src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=900&q=85"
+                alt="Productos para bebés"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="category-card-content">
+
+              <h3>
+                Bebés
+              </h3>
+
+              <p>
+                Todo para acompañar
+                cada etapa.
+              </p>
+
+            </div>
+
+          </a>
+
+
+          <!-- =================================================
+               CUIDADO PERSONAL
+          ================================================== -->
+
+          <a
+            href="#productos"
+            class="category-card category-care"
+          >
+
+            <div class="category-card-top">
+
+              <span>04</span>
+
+              <span class="category-card-arrow">
+                ↗
+              </span>
+
+            </div>
+
+
+            <div class="category-photo">
+
+              <img
+                src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=900&q=85"
+                alt="Productos de cuidado personal"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="category-card-content">
+
+              <h3>
+                Cuidado personal
+              </h3>
+
+              <p>
+                Productos para
+                tu rutina diaria.
+              </p>
+
+            </div>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         OFFER
+    ======================================================== -->
+
+    <section
+      class="offer-section"
+      id="ofertas"
+    >
+
+      <div class="container">
+
+        <div class="offer-banner">
+
+          <div class="offer-copy">
+
+            <span class="eyebrow">
+              OFERTA DE LA SEMANA
+            </span>
+
+            <h2>
+              Cuida tu rutina
+              <em>sin pagar de más.</em>
+            </h2>
+
+            <p>
+              Descubre productos seleccionados
+              con precios especiales.
+            </p>
+
+            <a
+              href="#productos"
+              class="button button-light"
+            >
+              Ver ofertas
+              <span>↗</span>
+            </a>
+
+          </div>
+
+
+          <div class="offer-visual">
+
+            <div class="offer-circle">
+              -30%
+            </div>
+
+
+            <div class="offer-real-image">
+
+              <img
+                src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=900&q=85"
+                alt="Productos de skincare"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="offer-small-card">
+
+              PRECIO CONCEPTO
+
+              <strong>
+                $18.490
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="offer-decoration">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         PRODUCTS
+    ======================================================== -->
+
+    <section
+      class="products section"
+      id="productos"
+    >
+
+      <div class="container">
+
+
+        <div class="section-heading-row">
+
+          <div>
+
+            <span class="eyebrow">
+              SELECCIÓN VITA
+            </span>
+
+            <h2>
+              Lo más buscado.
+            </h2>
+
+          </div>
+
+
+          <div class="product-controls">
+
+            <button
+              class="product-filter active"
+              data-filter="all"
+              type="button"
+            >
+              Todos
+            </button>
+
+            <button
+              class="product-filter"
+              data-filter="salud"
+              type="button"
+            >
+              Salud
+            </button>
+
+            <button
+              class="product-filter"
+              data-filter="belleza"
+              type="button"
+            >
+              Belleza
+            </button>
+
+            <button
+              class="product-filter"
+              data-filter="cuidado"
+              type="button"
+            >
+              Cuidado personal
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+          <!-- =================================================
+               PRODUCT 1
+          ================================================== -->
+
+          <article
+            class="product-card"
+            data-category="cuidado"
+            data-product-name="Daily Care"
+            data-price="12990"
+          >
+
+            <div class="product-image product-image-one">
+
+              <span class="product-badge">
+                MÁS VENDIDO
+              </span>
+
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Agregar a favoritos"
+              >
+                ♡
+              </button>
+
+
+              <img
+                src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=800&q=85"
+                alt="Producto de cuidado personal"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="product-info">
+
+              <div class="product-category">
+                CUIDADO PERSONAL
+              </div>
+
+              <h3>
+                Daily Care
+              </h3>
+
+              <p>
+                Loción hidratante de uso diario.
+              </p>
+
+
+              <div class="product-price-row">
+
+                <div>
+
+                  <span class="old-price">
+                    $15.990
+                  </span>
+
+                  <strong>
+                    $12.990
+                  </strong>
+
+                </div>
+
+
+                <button
+                  class="add-product"
+                  type="button"
+                  data-product="Daily Care"
+                  data-price="12990"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- =================================================
+               PRODUCT 2
+          ================================================== -->
+
+          <article
+            class="product-card"
+            data-category="belleza"
+            data-product-name="Skin Balance"
+            data-price="18490"
+          >
+
+            <div class="product-image product-image-two">
+
+              <span class="product-badge product-badge-soft">
+                -20%
+              </span>
+
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Agregar a favoritos"
+              >
+                ♡
+              </button>
+
+
+              <img
+                src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=85"
+                alt="Crema facial"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="product-info">
+
+              <div class="product-category">
+                BELLEZA
+              </div>
+
+              <h3>
+                Skin Balance
+              </h3>
+
+              <p>
+                Crema facial para tu rutina.
+              </p>
+
+
+              <div class="product-price-row">
+
+                <div>
+
+                  <span class="old-price">
+                    $22.990
+                  </span>
+
+                  <strong>
+                    $18.490
+                  </strong>
+
+                </div>
+
+
+                <button
+                  class="add-product"
+                  type="button"
+                  data-product="Skin Balance"
+                  data-price="18490"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- =================================================
+               PRODUCT 3
+          ================================================== -->
+
+          <article
+            class="product-card"
+            data-category="cuidado"
+            data-product-name="Pure Care"
+            data-price="9990"
+          >
+
+            <div class="product-image product-image-three">
+
+              <span class="product-badge">
+                FAVORITO
+              </span>
+
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Agregar a favoritos"
+              >
+                ♡
+              </button>
+
+
+              <img
+                src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=800&q=85"
+                alt="Producto de higiene personal"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="product-info">
+
+              <div class="product-category">
+                CUIDADO PERSONAL
+              </div>
+
+              <h3>
+                Pure Care
+              </h3>
+
+              <p>
+                Higiene y cuidado para todos.
+              </p>
+
+
+              <div class="product-price-row">
+
+                <div>
+
+                  <span class="old-price">
+                    $11.990
+                  </span>
+
+                  <strong>
+                    $9.990
+                  </strong>
+
+                </div>
+
+
+                <button
+                  class="add-product"
+                  type="button"
+                  data-product="Pure Care"
+                  data-price="9990"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- =================================================
+               PRODUCT 4
+          ================================================== -->
+
+          <article
+            class="product-card"
+            data-category="salud"
+            data-product-name="Vita Plus"
+            data-price="15990"
+          >
+
+            <div class="product-image product-image-four">
+
+              <span class="product-badge product-badge-dark">
+                NUEVO
+              </span>
+
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Agregar a favoritos"
+              >
+                ♡
+              </button>
+
+
+              <img
+                src="https://images.unsplash.com/photo-1550572017-edd951b55104?auto=format&fit=crop&w=800&q=85"
+                alt="Productos de vitaminas"
+                loading="lazy"
+              >
+
+            </div>
+
+
+            <div class="product-info">
+
+              <div class="product-category">
+                SALUD
+              </div>
+
+              <h3>
+                Vita Plus
+              </h3>
+
+              <p>
+                Complemento para tu día a día.
+              </p>
+
+
+              <div class="product-price-row">
+
+                <div>
+
+                  <span class="old-price">
+                    $18.990
+                  </span>
+
+                  <strong>
+                    $15.990
+                  </strong>
+
+                </div>
+
+
+                <button
+                  class="add-product"
+                  type="button"
+                  data-product="Vita Plus"
+                  data-price="15990"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div class="products-footer">
+
+          <span>
+            PRECIOS MOSTRADOS COMO PARTE DEL CONCEPTO
+          </span>
+
+          <button
+            id="showAllProducts"
+            type="button"
+          >
+            Explorar selección
+            <span>↗</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         PERSONALIZED
+    ======================================================== -->
+
+    <section class="personalized section">
+
+      <div class="container">
+
+        <div class="personalized-card">
+
+          <div class="personalized-copy">
+
+            <span class="eyebrow">
+              PARA TI
+            </span>
+
+            <h2>
+              Tu rutina.
+              <br>
+              <em>Más simple.</em>
+            </h2>
+
+            <p>
+              Descubre una selección pensada para
+              acompañar tus necesidades del día a día.
+            </p>
+
+            <a
+              href="#productos"
+              class="text-link text-link-light"
+            >
+              Explorar recomendaciones
+              <span>↗</span>
+            </a>
+
+          </div>
+
+
+          <div class="routine-visual">
+
+            <div class="routine-card routine-card-one">
+
+              <img
+                src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=500&q=80"
+                alt="Cuidado personal"
+                loading="lazy"
+              >
+
+              <span>01</span>
+
+              <strong>
+                SKIN
+                <br>
+                BALANCE
+              </strong>
+
+              <small>
+                BELLEZA
+              </small>
+
+            </div>
+
+
+            <div class="routine-card routine-card-two">
+
+              <img
+                src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=500&q=80"
+                alt="Cuidado corporal"
+                loading="lazy"
+              >
+
+              <span>02</span>
+
+              <strong>
+                DAILY
+                <br>
+                CARE
+              </strong>
+
+              <small>
+                CUIDADO
+              </small>
+
+            </div>
+
+
+            <div class="routine-card routine-card-three">
+
+              <img
+                src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=500&q=80"
+                alt="Productos de bienestar"
+                loading="lazy"
+              >
+
+              <span>03</span>
+
+              <strong>
+                VITA
+                <br>
+                PLUS
+              </strong>
+
+              <small>
+                SALUD
+              </small>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         DELIVERY
+    ======================================================== -->
+
+    <section class="delivery-section section">
+
+      <div class="container delivery-grid">
+
+
+        <div class="delivery-copy">
+
+          <span class="eyebrow">
+            DELIVERY
+          </span>
+
+          <h2>
+            Lo necesitas.
+            <br>
+            <em>Lo recibes.</em>
+          </h2>
+
+          <p>
+            Diseñamos una experiencia de compra
+            pensada para que puedas elegir,
+            pagar y recibir tus productos sin
+            complicaciones.
+          </p>
+
+
+          <div class="delivery-steps">
+
+            <div class="delivery-step">
+
+              <span>01</span>
+
+              <div>
+                <strong>Elige</strong>
+                <p>Encuentra tus productos.</p>
+              </div>
+
+            </div>
+
+
+            <div class="delivery-step">
+
+              <span>02</span>
+
+              <div>
+                <strong>Compra</strong>
+                <p>Completa tu pedido.</p>
+              </div>
+
+            </div>
+
+
+            <div class="delivery-step">
+
+              <span>03</span>
+
+              <div>
+                <strong>Recibe</strong>
+                <p>Donde estés.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="delivery-visual">
+
+          <div class="delivery-photo">
+
+            <img
+              src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=1200&q=85"
+              alt="Entrega de productos"
+              loading="lazy"
+            >
+
+            <div class="delivery-floating">
+
+              <small>
+                ENTREGA
+              </small>
+
+              <strong>
+                DONDE ESTÉS
+              </strong>
+
+              <span>
+                VITA experience
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         SERVICES
+    ======================================================== -->
+
+    <section
+      class="services section"
+      id="servicios"
+    >
+
+      <div class="container">
+
+        <div class="section-heading-row">
+
+          <div>
+
+            <span class="eyebrow">
+              SERVICIOS
+            </span>
+
+            <h2>
+              Más que una compra.
+            </h2>
+
+          </div>
+
+          <p class="section-side-copy">
+            Una experiencia digital pensada
+            alrededor de las personas.
+          </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+          <article class="service-card service-main">
+
+            <div class="service-number">
+              01
+            </div>
+
+            <div class="service-icon">
+              ↗
+            </div>
+
+            <h3>
+              Delivery
+            </h3>
+
+            <p>
+              Compra online y recibe tus productos
+              donde estés.
+            </p>
+
+            <a href="#inicio">
+              Conocer más
+              <span>↗</span>
+            </a>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-number">
+              02
+            </div>
+
+            <div class="service-icon">
+              +
+            </div>
+
+            <h3>
+              Asesoría
+            </h3>
+
+            <p>
+              Encuentra soluciones para tus
+              necesidades de bienestar.
+            </p>
+
+            <a href="#inicio">
+              Conocer más
+              <span>↗</span>
+            </a>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-number">
+              03
+            </div>
+
+            <div class="service-icon">
+              %
+            </div>
+
+            <h3>
+              Beneficios
+            </h3>
+
+            <p>
+              Descubre ofertas y oportunidades
+              especiales.
+            </p>
+
+            <a href="#ofertas">
+              Ver ofertas
+              <span>↗</span>
+            </a>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-number">
+              04
+            </div>
+
+            <div class="service-icon">
+              ✓
+            </div>
+
+            <h3>
+              Compra simple
+            </h3>
+
+            <p>
+              Una experiencia diseñada para
+              reducir pasos y fricción.
+            </p>
+
+            <a href="#productos">
+              Explorar
+              <span>↗</span>
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         NEWSLETTER
+    ======================================================== -->
+
+    <section class="newsletter section">
+
+      <div class="container">
+
+        <div class="newsletter-card">
+
+          <div>
+
+            <span class="eyebrow">
+              MANTENTE CERCA
+            </span>
+
+            <h2>
+              Ofertas,
+              novedades
+              <em>y bienestar.</em>
+            </h2>
+
+          </div>
+
+
+          <form
+            class="newsletter-form"
+            id="newsletterForm"
+          >
+
+            <label for="newsletterEmail">
+              Recibe novedades en tu correo
+            </label>
+
+            <div class="newsletter-input">
+
+              <input
+                type="email"
+                id="newsletterEmail"
+                placeholder="Tu correo electrónico"
+                required
+              >
+
+              <button type="submit">
+                Suscribirme
+                <span>↗</span>
+              </button>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CONCEPT NOTE
+    ======================================================== -->
+
+    <section class="concept-note">
+
+      <div class="container concept-note-inner">
+
+        <div class="concept-note-label">
+          WEBSTUDIO
+        </div>
+
+
+        <div class="concept-note-copy">
+
+          <span class="eyebrow">
+            CONCEPT PROJECT
+          </span>
+
+          <h2>
+            VITA —
+            <em>Health & Wellness eCommerce.</em>
+          </h2>
+
+          <p>
+            Proyecto conceptual desarrollado por
+            WebStudio para explorar una experiencia
+            eCommerce moderna, visual, intuitiva
+            y orientada a conversión.
+          </p>
+
+          <p class="concept-disclaimer">
+            VITA es una marca ficticia creada
+            exclusivamente para este proyecto
+            de portafolio. No representa un sitio
+            oficial ni una marca comercial existente.
+          </p>
+
+        </div>
+
+
+        <div class="concept-note-year">
+          2026
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="footer-main">
+
+        <div class="footer-brand">
+
+          <a href="#inicio" class="brand">
+
+            <span class="brand-symbol">
+              <span></span>
+              <span></span>
+            </span>
+
+            <span class="brand-name">
+              VITA
+            </span>
+
+          </a>
+
+          <p>
+            Salud, bienestar y cuidado
+            en una experiencia digital.
+          </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <span>
+            EXPLORAR
+          </span>
+
+          <a href="#categorias">
+            Categorías
+          </a>
+
+          <a href="#productos">
+            Productos
+          </a>
+
+          <a href="#ofertas">
+            Ofertas
+          </a>
+
+          <a href="#servicios">
+            Servicios
+          </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <span>
+            WEBSTUDIO
+          </span>
+
+          <a href="#inicio">
+            Concept Project
+          </a>
+
+          <a href="#inicio">
+            UX/UI Design
+          </a>
+
+          <a href="#inicio">
+            eCommerce
+          </a>
+
+          <a href="#inicio">
+            2026
+          </a>
+
+        </div>
+
+
+        <div class="footer-column footer-contact">
+
+          <span>
+            CONCEPTO
+          </span>
+
+          <strong>
+            Diseñado para
+            <br>
+            una nueva experiencia.
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 WebStudio · VITA Concept
+        </span>
+
+        <span>
+          Proyecto conceptual · Marca ficticia
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================================================
+       CART
+  ========================================================== -->
+
+  <div
+    class="drawer-overlay"
+    id="drawerOverlay"
+  ></div>
+
+
+  <aside
+    class="cart-drawer"
+    id="cartDrawer"
+    aria-hidden="true"
+  >
+
+    <div class="cart-drawer-header">
+
+      <div>
+
+        <span class="eyebrow">
+          TU COMPRA
+        </span>
+
+        <h2>
+          Carrito
+        </h2>
+
+      </div>
+
+      <button
+        id="closeCart"
+        type="button"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div
+      class="cart-content"
+      id="cartContent"
+    ></div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-summary-row">
+
+        <span>
+          Subtotal
+        </span>
+
+        <strong id="cartTotal">
+          $0
+        </strong>
+
+      </div>
+
+
+      <p class="cart-note">
+        Los precios son referenciales y forman
+        parte de este concepto.
+      </p>
+
+
+      <button
+        class="checkout-button"
+        id="checkoutButton"
+        type="button"
+      >
+        Continuar compra
+        <span>↗</span>
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- =========================================================
+       LOCATION MODAL
+  ========================================================== -->
+
+  <div
+    class="modal-overlay"
+    id="locationModal"
+  >
+
+    <div class="modal-card">
+
+      <button
+        class="modal-close"
+        id="closeLocation"
+        type="button"
+      >
+        ×
+      </button>
+
+
+      <span class="eyebrow">
+        ENTREGA
+      </span>
+
+      <h2>
+        ¿Dónde quieres
+        recibir tu compra?
+      </h2>
+
+      <p>
+        Selecciona una ubicación para
+        personalizar tu experiencia.
+      </p>
+
+
+      <div class="location-options">
+
+        <button
+          type="button"
+          class="location-option"
+          data-location="Santiago"
+        >
+
+          <span>⌖</span>
+
+          <div>
+            <strong>Santiago</strong>
+            <small>Región Metropolitana</small>
+          </div>
+
+          <b>→</b>
+
+        </button>
+
+
+        <button
+          type="button"
+          class="location-option"
+          data-location="Providencia"
+        >
+
+          <span>⌖</span>
+
+          <div>
+            <strong>Providencia</strong>
+            <small>Santiago</small>
+          </div>
+
+          <b>→</b>
+
+        </button>
+
+
+        <button
+          type="button"
+          class="location-option"
+          data-location="Las Condes"
+        >
+
+          <span>⌖</span>
+
+          <div>
+            <strong>Las Condes</strong>
+            <small>Santiago</small>
+          </div>
+
+          <b>→</b>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================================================
+       ACCOUNT MODAL
+  ========================================================== -->
+
+  <div
+    class="modal-overlay"
+    id="accountModal"
+  >
+
+    <div class="modal-card account-modal">
+
+      <button
+        class="modal-close"
+        id="closeAccount"
+        type="button"
+      >
+        ×
+      </button>
+
+
+      <span class="account-symbol">
+        ◯
+      </span>
+
+
+      <span class="eyebrow">
+        MI CUENTA
+      </span>
+
+      <h2>
+        Tu experiencia,
+        más personal.
+      </h2>
+
+      <p>
+        Esta función forma parte del
+        prototipo conceptual.
+      </p>
+
+
+      <button
+        class="button button-primary full-button"
+        id="accountDemoButton"
+        type="button"
+      >
+        Continuar
+        <span>↗</span>
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================================================
+       TOAST
+  ========================================================== -->
+
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  >
+
+    <span class="toast-icon">
+      ✓
+    </span>
+
+    <div>
+
+      <strong id="toastTitle">
+        Listo
+      </strong>
+
+      <p id="toastMessage">
+        Acción realizada.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
